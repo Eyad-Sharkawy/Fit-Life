@@ -1,0 +1,155 @@
+/* ============================================
+   Main CSS - Global Styles & Resets
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background: #f5f5f5;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2a2a2a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Typography hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Section Styling */
+section {
+    position: relative;
+    padding: 120px 80px;
+}
+
+/* Override for about section to connect to hero */
+section.about-section,
+section.about {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.section-title:hover {
+    transform: translateY(-2px);
+    color: #FFA500;
+}
+
+/* Section Background SVGs */
+.about-bg, .success-bg, .services-bg, .cta-bg, .nutrition-bg, .bmi-bg, .team-bg, .pricing-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.about-bg {
+    top: 0;
+    margin-top: 0;
+    height: 60%;
+}
+
+.about-bg svg, .success-bg svg, .services-bg svg, .cta-bg svg, .nutrition-bg svg, .bmi-bg svg, .team-bg svg, .pricing-bg svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.about-bg svg {
+    margin-top: 0;
+    height: 100%;
+}
+
+.about-top-transition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    z-index: 1;
+    pointer-events: none;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.about-top-transition svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav, .hero-content, section, footer {
+        padding: 40px 20px;
+    }
+
+    .about-grid,
+    .services-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 80px;
+    }
+}
+

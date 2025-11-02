@@ -1,0 +1,22 @@
+{
+  "name": "FITlife",
+  "version": "1.0.0",
+  "description": "Your Fitness Journey - A comprehensive fitness and nutrition platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -o",
+    "dev": "npx http-server . -p 8080 -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fitness",
+    "nutrition",
+    "health",
+    "workout",
+    "diet",
+    "BMI"
+  ],
+  "author": "",
+  "license": "ISC",
+  "private": true
+}
