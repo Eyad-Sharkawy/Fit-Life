@@ -839,7 +839,7 @@
     }
     
     .services > div {
-        padding: 2.5rem 2rem;
+        padding: 2rem 1.5rem;
     }
     
     .services .section-title {
@@ -848,7 +848,12 @@
     }
     
     .services-image {
-        max-width: 60%;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 15px auto !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+        display: block;
     }
     
     .services-description {
@@ -895,7 +900,7 @@
     }
     
     .services > div {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
     }
     
     .services .section-title {
@@ -904,7 +909,12 @@
     }
     
     .services-image {
-        max-width: 70%;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 15px auto !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+        display: block;
     }
     
     .services-description {
@@ -976,6 +986,13 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 1;
+    padding: 0;
+}
+
+@media (max-width: 968px) {
+    .services-image {
+        max-width: 80% !important;
+    }
 }
 
 .services-description {
